@@ -1,8 +1,25 @@
-# Getting Started with Create React App
+# Bloomier website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bloomier is a professional website to expose photography art work.
 
-## Available Scripts
+## Stack 
+**MOCKUPS**\
+Figma\
+Pintrest and Dribble ( Design inspiration )
+
+**FRONT** \
+React \
+Typscript 
+
+**BACK** \
+Django \
+MangoDB
+
+**CLOUD** \
+AWS
+
+
+## Scripts
 
 In the project directory, you can run:
 
