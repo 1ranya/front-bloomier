@@ -4,16 +4,19 @@ Bloomier is a professional website to expose photography art work.
 
 ## Stack 
 **MOCKUPS**\
-Figma\
-Pintrest and Dribble ( Design inspiration )
+Figma \
+Pinterest and Dribble ( Design inspirations )
 
 **FRONT** \
 React \
-Typscript 
+Typescript \
+Tailwind \
+react-icons
 
 **BACK** \
 Django \
-MangoDB
+MangoDB \
+Djongo
 
 **CLOUD** \
 AWS
