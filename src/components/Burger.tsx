@@ -1,8 +1,7 @@
 import React from 'react';
 
 import { useDispatch } from 'react-redux'
-import { GiCrossedBones } from "react-icons/gi";
-
+import { ImCross } from "react-icons/im";
 import { handleMenu } from '../features/menuSlice'
 interface Props {
   isCross: boolean,
@@ -18,8 +17,8 @@ function Burger(props: Props) {
   return (
     <div className="burger flex flex-col gap-1" onClick={handleMenuDisplay}>
       {props.isCross ?
-        <div>
-          <GiCrossedBones size={25} className="text-secondary-color"/>
+        <div className="text-secondary-color z-10 mt-2 ml-2 hover:animate-wiggle">
+          <ImCross size={15} className="text-primary-color"/>
         </div>
         : 
         (<>
