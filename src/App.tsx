@@ -1,20 +1,23 @@
 import React from 'react';
+import { Routes, Route } from "react-router-dom";
 
 import './App.css';
-import Section1 from '../src/Home/section1/Section1'
-import Section2 from '../src/Home/section2/Section2'
-import Section3 from './Home/section3/Section3';
-import Section4 from './Home/section4/Section4';
 import Header from './components/Header';
+import Home from './Home/index';
+import Gallery from './header/Gallery';
+import Photography from './header/Photography';
+import Chat from './header/Chat';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Section1/>
-      <Section2/>
-      <Section3/>
-      <Section4/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/photography" element={<Photography />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
     </div>
   );
 }

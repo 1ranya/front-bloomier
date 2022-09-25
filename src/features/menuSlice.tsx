@@ -11,7 +11,6 @@ export const menuSlice = createSlice({
   },
   reducers: {
     handleMenu: (state: MenuState, action: PayloadAction<boolean>) => {
-      console.log(action.payload)
       state.menuState = !state.menuState
     },
   },
