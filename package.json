@@ -1,6 +1,6 @@
 {
   "name": "front-bloomier",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
@@ -45,7 +45,7 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.8",
+    "autoprefixer": "^10.4.12",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }

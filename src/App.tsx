@@ -1,10 +1,12 @@
 import React from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import './App.css';
 import Header from './components/Header';
 import Home from './Home/index';
 import Gallery from './header/Gallery';
+import Photography from './header/Photography';
+import Chat from './header/Chat';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/photography" element={<Photography />} />
+        <Route path="/chat" element={<Chat />} />
       </Routes>
     </div>
   );
