@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 import InterractionBlock from '../components/InterractionBlock'
 
@@ -15,6 +16,7 @@ export default function Gallery() {
             <InterractionBlock />
           </div>)
         )}
+      <Footer/>
       </div>
     </>
   )
