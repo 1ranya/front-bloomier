@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         'primary-color': '#2f3e46',
         'secondary-color': '#dda15e',
+        'faded-white': '#fefae0',
       },
       width: {
         'viewport-95': '95vw',
@@ -25,13 +26,23 @@ module.exports = {
       backgroundImage: {
         menuBgImg: "url('medias/women_photographer.jpg')"
       },
+      screens: {
+        'phone': '0px', 
+        'widePhone': '500px',
+        'tablet': '640px',
+        'wideTablet': '900px',
+        'laptop': '1024px',
+        'desktop': '1280px',
+      },
       animation: {
         'wiggle': 'wiggle 1s ease-in-out',
         'fadeIn': 'fadeIn 500ms',
         'heartBeat': 'beat 0.2s ease-in-out forwards',
-        'appear': 'appear 0.6s ease-in-out forwards',
-        'appear-1': 'appear 0.8s ease-in-out forwards',
-        'appear-2': 'appear 1s ease-in-out forwards',
+        'appear': 'disappearWithColorChanging 0.6s ease-in-out forwards',
+        'appear-1': 'disappearWithColorChanging 0.8s ease-in-out forwards',
+        'appear-2': 'disappearWithColorChanging 1s ease-in-out forwards',
+        'out': 'disappear 2s normal forwards',
+        'in': 'appear 2s normal forwards',
       },
       keyframes: {
         wiggle: {
@@ -74,7 +85,7 @@ module.exports = {
             color: '#9b2226'
           },
         },
-        appear: {
+        disappearWithColorChanging: {
           '0%': {
             'color': '#9b2226',
             'opacity': 0.6,
@@ -83,6 +94,22 @@ module.exports = {
             'color': '#9b2226',
             'opacity': 0,
           },
+        }, 
+        disappear: {
+          '0%': {
+            'opacity': 1,
+          },
+          '100%': {
+            'opacity': 0
+          }
+        },
+        appear: {
+          '0%': {
+            'opacity': 0,
+          },
+          '100%': {
+            'opacity': 1
+          }
         }
       },
       gridAutoRows: {

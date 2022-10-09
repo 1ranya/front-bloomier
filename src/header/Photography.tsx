@@ -8,16 +8,16 @@ export default function Photography() {
   return (
     <>
       <p className='font-title text-2xl text-secondary-color text-center mt-10 mb-4' > Photography</p>
-      <div className='flex flex-row flex-wrap gap-y-5 mx-5'>
-        {[1, 2, 3, 4, 5, 6].map(() => (
+      {/* <div className='mx-5 phone:flex flex-row flex-wrap widePhone:grid grid-cols-2 gap-5 wideTablet:grid-cols-4'>
+        {photos.map((photo) => (
           <div className="relative">
             <img src='https://picsum.photos/700/1000' alt="photography-alt" className="rounded-2xl"/>  
-            <InterractionBlock />
+            <InterractionBlock photo={photo}/>
           </div>
           )
         )}
-        <Footer/>
-      </div>
+      </div> */}
+      <Footer/>
     </>
   )
 }
