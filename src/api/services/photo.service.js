@@ -3,11 +3,11 @@ import http from "../../http-commons";
 class PhotoDataService {
   getAll() {
     return http.get("/photos");
-  }
+  } 
 
-//   get(id) {
-//     return http.get(`/tutorials/${id}`);
-//   }
+  get(id) {
+    return http.get(`/photos/${id}`);
+  }
 
   create(data) {
     return http.post("/photos", data);
@@ -15,18 +15,18 @@ class PhotoDataService {
 
   update(id, data) {
     return http.put(`/photos/${id}`, data);
-  }
+  };
 
 //   delete(id) {
-//     return http.delete(`/tutorials/${id}`);
+//     return http.delete(`/photos/${id}`);
 //   }
 
 //   deleteAll() {
-//     return http.delete(`/tutorials`);
+//     return http.delete(`/photos`);
 //   }
 
 //   findByTitle(title) {
-//     return http.get(`/tutorials?title=${title}`);
+//     return http.get(`/photos?title=${title}`);
 //   }
 }
 
