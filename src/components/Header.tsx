@@ -15,6 +15,17 @@ export default function Header() {
         ? <div className='flex flex-row flex-nowrap gap-2 justify-between m-2'>
             <Burger isCross/>
             <Menu/>
+            <div className='flex flex-row flex-nowrap gap-1 text-secondary-color'>
+              <a href='#' className={styleBorder} ><SiInstagram/> </a>
+              <a href="https://www.shutterstock.com/g/Rania%20tn?rid=344677805&utm_medium=email&utm_source=ctrbreferral-t-link"
+                className={styleBorder} 
+                target="_blank"
+                rel="no_link noreferrer"><SiShutterstock/></a>
+              <a href='https://www.pinterest.fr/bloomierphotography/' 
+                className={styleBorder}
+                rel="no_shutterstock noreferrer"
+                target="_blank"><FaPinterestP/></a>
+            </div>
           </div>
         : <div className='flex flex-row flex-nowrap justify-between m-2'>
             <Burger isCross={false}/>

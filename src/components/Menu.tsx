@@ -1,11 +1,8 @@
 import React from 'react'
 
-export default function Menu() {
+import { BsHouseDoor } from "react-icons/bs";
 
-  const handleLinkClick = (e: any) => {
-    // Change menu text color after click
-    e.target.setAttribute('class', 'text-secondary-color font-bold')
-  }
+export default function Menu() {
 
   const menuElements = [
     {'/': 'Home'}, 
@@ -15,18 +12,25 @@ export default function Menu() {
   ]
 
   const menuElementsHTML: React.ReactNode = menuElements.map((element) => {
-    return <a href={Object.keys(element).toString()} onClick={handleLinkClick}>{Object.values(element).toString()}</a>
+    return <a href={Object.keys(element).toString()} className='pb-[20px] hover:text-secondary-color flex gap-[5px] items-center' >{
+        Object.values(element).toString() === 'Home' ? <BsHouseDoor size={20}/> : Object.values(element).toString()}
+      </a>
   })
 
   return (
-    <div 
-      id="Menu" 
-      className="absolute w-viewport-95 h-full
-        text-white bg-menuBgImg bg-cover 
-        flex flex-col justify-evenly items-center 
-        font-title font-extrabold text-4xl 
-        animate-fadeIn z-10 ">
-        {menuElementsHTML}
-    </div>  
+    <div>
+      <div 
+        id="Menu" 
+        className="absolute w-[100%] h-full left-0
+          text-faded-white
+          flex flex-col justify-center items-center
+          font-title font-extrabold text-xl 
+          animate-fadeIn z-10
+          tablet:w-[30%] bg-[#182333] tablet:items-left tablet:px-[20px] tablet:text-xl tablet:items-start tablet:justify-center
+          wideTablet:w-[25%] laptop:w-[20%] desktop:w-[15%]
+        ">  
+          {menuElementsHTML}
+      </div>  
+    </div>
   )
 }
