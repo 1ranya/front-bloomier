@@ -1,8 +1,12 @@
 import http from "../../http-commons";
+import { sortByDate } from "../../utils/utils";
 
 class PhotoDataService {
-  getAll() {
-    return http.get("/photos");
+  async getAll() {
+    let photos = http.get("/photos");
+    photos = await photos
+    let result = sortByDate(photos.data)
+    return result;
   } 
 
   get(id) {
