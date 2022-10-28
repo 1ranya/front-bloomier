@@ -21,7 +21,7 @@ export default function Menu() {
     <div>
       <div 
         id="Menu" 
-        className="absolute w-[100%] h-full left-0
+        className="absolute w-[100%] h-full left-0 top-0
           text-faded-white
           flex flex-col justify-center items-center
           font-title font-extrabold text-xl 

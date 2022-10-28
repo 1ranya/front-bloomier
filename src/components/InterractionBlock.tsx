@@ -12,37 +12,45 @@ interface Props {
 export default function InterractionBlock({photo}: Props) {
   const likeButtonCommonStyle = "absolute bottom-[10%] left-[5%]";
 
-  const [likesNumber, setLikesNumber] = useState<number>(photo.likes)
+  const [likesNumber, setLikesNumber] = useState<number>(Number(photo.likes))
   const [test, setTest] = useState<number[]>(JSON.parse(localStorage.getItem('likedItems')??'[]'))
 
   // Functions
   const hitLike = async () => {
-    const likes = likesNumber+1
+    const likes = Number(likesNumber+1)
     let id = photo.id
     const dataToUpdate = {
       "likes": likes
     }
     setLikesNumber(likes)
 
-    // Update likes number
-    await photoDataService.update(photo.id, dataToUpdate)
-
     // Update local storage liked items value 
     let items =  JSON.parse(localStorage.getItem('likedItems')??'[]')
     let temp =  [...items, id]
     localStorage.setItem('likedItems', JSON.stringify(temp))
     setTest(temp)
+
+    // Update likes number
+    await photoDataService.update(photo.id, dataToUpdate)
   }
 
 
-  const hitDislike = () => {
-    setLikesNumber(likesNumber-1)
-    const itemStorage = JSON.parse(localStorage.getItem('likedItems')??'[]')
+  const hitDislike = async() => {
+    const likes = Number(likesNumber-1)
+    let id = photo.id
+    const dataToUpdate = {
+      "likes": likes
+    }
+    setLikesNumber(Number(likes))
     
     // Delete the id of the photo 
-    let index = itemStorage.indexOf(photo.id)
+    const itemStorage = JSON.parse(localStorage.getItem('likedItems')??'[]')
+    let index = itemStorage.indexOf(id)
     itemStorage.splice(index, 1)
     localStorage.setItem('likedItems', JSON.stringify(itemStorage))
+
+    // Update likes number
+    await photoDataService.update(id, dataToUpdate)
   }
 
   return (
