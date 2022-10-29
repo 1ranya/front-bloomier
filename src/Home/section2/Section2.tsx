@@ -21,11 +21,11 @@ function Section2() {
           <p className='font-text phone:text-[0.9rem] font-thin text-white 
             tablet:text-[1rem] laptop:text-[1.2rem]
           '>
-              Computer engineer, painter and photographer.
-              Passioned by portrait and food photography, based in Paris.
-              I love meeting people, creating beautiful photo sets, 
-              mix colors and create smiles on people's face.  
-              I started my business in 2022. 
+              Computer engineer, painter and photographer.<br/>
+              Fortunately, coding skills helped me to build this Bloomier website.<br/>
+              Passioned by portrait and food photography as well as abstract and portait painting.<br/>
+              Based in Paris, i enjoy meeting people, creating beautiful photo sets, mix colors from where amazing ideas get born. <br/>
+              The idea of creating a solid small business was a childhood dream and got concretised in 2022. 
           </p>
         </div>
       </section>
