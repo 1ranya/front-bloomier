@@ -1,7 +1,7 @@
 # Bloomier website
 
-Bloomier is a personnal portfolio website to expose photography and art work.
-This repository is the front part of the website.
+Bloomier is a personnal portfolio website to expose photography and art work.\
+This repository is the front part of the website.\
 You'll find below the details about the stack and how to start the project.
 
 ## Front Stack 
