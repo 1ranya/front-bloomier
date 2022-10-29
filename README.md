@@ -16,7 +16,7 @@ Tailwind \
 react-icons
 
 **HOST**\
-The hole website is hosted on [https://render.com]
+The hole website is hosted on [https://render.com](https://render.com)
 
 
 
