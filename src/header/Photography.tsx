@@ -22,7 +22,7 @@ export default function Photography() {
   return (
     <>
       <p className='font-title text-2xl text-secondary-color text-center mt-10 mb-4' > Photography</p>
-      <div className='mx-3 phone:flex flex-row flex-wrap widePhone:grid grid-cols-2 gap-5 wideTablet:grid-cols-4'>
+      <div className='mx-1.5 phone:flex flex-row flex-wrap widePhone:grid gap-5 wideTablet:grid-cols-4'>
         {photos.map((photo, key) => (
           <div className={cardStyle} key={key}>
             <img src={photo.url ? photo.url : 'https://picsum.photos/700/1000'} alt="photography-alt" className={imageStyle}/>  
