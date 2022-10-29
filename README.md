@@ -1,6 +1,8 @@
 # Bloomier website
 
-Bloomier is a professional website to expose photography art work.
+Bloomier is a personnal portfolio website to expose photography and art work.
+This repository is the front part of the website.
+You'll find below the details about the stack and how to start the project.
 
 ## Front Stack 
 **MOCKUPS**\
@@ -14,7 +16,7 @@ Tailwind \
 react-icons
 
 **HOST**\
-The hole website is hosted on [https://render.com]\
+The hole website is hosted on [https://render.com]
 
 
 
