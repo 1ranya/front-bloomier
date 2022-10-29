@@ -11,11 +11,8 @@ export default function Section4() {
         <p className='font-text text-[0.9rem] font-thin text-white 
           laptop:text-[1.2rem]
         '>
-            Computer engineer, painter and photographer.
-            Passioned by portrait and food photography, based in Paris.
-            I love meeting people, creating beautiful photo sets, 
-            mix colors and create smiles on people's face.  
-            I started my business in 2022. 
+          This project aims to share my passion and create a link between me and people intrested in photogarphy and art. <br/>
+          My work is available through multiple platforms, you can interract with, ask for personnalized porducts and give me your feedbacks.
         </p>
       </div>
       <div className='h-[40vh] 
