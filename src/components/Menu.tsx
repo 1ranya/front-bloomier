@@ -7,7 +7,7 @@ export default function Menu() {
   const menuElements = [
     {'/': 'Home'}, 
     {'/gallery': 'Gallery'}, 
-    {'/Photography': 'Photography'}, 
+    {'/photography': 'Photography'}, 
     {'/chat': 'Let\'s talk'}
   ]
 
