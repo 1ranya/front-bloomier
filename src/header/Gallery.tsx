@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import InterractionBlock from '../components/InterractionBlock'
 import PhotoDataService from '../api/services/photo.service'
 import {cardStyle, imageStyle} from '../styling/common-styles'
+import { ImSpinner2 } from "react-icons/im"
 import { Photo } from '../types'
 import Loader from '../components/Loader'
 
