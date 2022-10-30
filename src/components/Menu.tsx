@@ -26,7 +26,7 @@ export default function Menu() {
           flex flex-col justify-center items-center
           font-title font-extrabold text-xl 
           animate-fadeIn z-10
-          tablet:w-[30%] bg-[#182333] tablet:items-left tablet:px-[20px] tablet:text-xl tablet:items-start tablet:justify-center
+          tablet:w-[30%] bg-dark-primary-color tablet:items-left tablet:px-[20px] tablet:text-xl tablet:items-start tablet:justify-center
           wideTablet:w-[25%] laptop:w-[20%] desktop:w-[15%]
         ">  
           {menuElementsHTML}
