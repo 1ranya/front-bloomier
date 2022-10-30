@@ -26,7 +26,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Install node packages, specified in the package.json file
+Install node packages listed in the package.json file
 
 ### `npm start`
 
