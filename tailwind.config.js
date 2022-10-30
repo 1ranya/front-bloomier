@@ -16,6 +16,7 @@ module.exports = {
         'primary-color': '#2f3e46',
         'secondary-color': '#dda15e',
         'faded-white': '#fefae0',
+        'dark-primary-color': '#182333',
       },
       width: {
         'viewport-95': '95vw',
@@ -109,6 +110,14 @@ module.exports = {
           },
           '100%': {
             'opacity': 1
+          }
+        }, 
+        spin: {
+          '0%': {
+            'transform': 'rotate(0deg)'
+          },
+          '100%': {
+            'transform': 'rotate(360deg)'
           }
         }
       },
