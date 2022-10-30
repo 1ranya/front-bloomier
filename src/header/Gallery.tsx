@@ -6,6 +6,7 @@ import PhotoDataService from '../api/services/photo.service'
 import {cardStyle, imageStyle} from '../styling/common-styles'
 import { ImSpinner2 } from "react-icons/im"
 import { Photo } from '../types'
+import Loader from '../components/Loader'
 
 export default function Gallery(){
   const [galleryPhotos, setGalleryPhotos] = useState<Photo[]>([])
@@ -32,9 +33,7 @@ export default function Gallery(){
             </div>)
           )}
         </div>)
-        : (<div className='m-auto'>
-            <ImSpinner2 className='animate-spin text-dark-primary-color' size={100}/>
-          </div>)
+        : (<Loader/>)
       }
       <Footer/>
     </>
