@@ -4,6 +4,7 @@ const links = [
     'https://www.pinterest.fr/bloomierphotography/',
     'mailto:bloomier.photography@gmail.com',
     'https://github.com/1ranya',
+    'https://www.instagram.com/bloomier.studio/',
 ]
 
 export default links;

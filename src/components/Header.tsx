@@ -17,7 +17,8 @@ export default function Header() {
             <Burger isCross/>
             <Menu/>
             <div className='flex flex-row flex-nowrap gap-1 text-secondary-color'>
-              <a href='#' className={styleBorder} 
+              <a href='https://www.instagram.com/bloomier.studio/' 
+                className={styleBorder} 
                 target="_blank"
                 rel="no_instagram noreferrer"><SiInstagram/> </a>
               <a href="https://www.shutterstock.com/g/Rania%20tn?rid=344677805&utm_medium=email&utm_source=ctrbreferral-t-link"
@@ -37,7 +38,7 @@ export default function Header() {
         : <div className='flex flex-row flex-nowrap justify-between m-2'>
             <Burger isCross={false}/>
             <div className='flex flex-row flex-nowrap gap-1 text-secondary-color'>
-              <a href='#' className={styleBorder} ><SiInstagram/> </a>
+              <a href='https://www.instagram.com/bloomier.studio/' className={styleBorder} ><SiInstagram/> </a>
               <a href="https://www.shutterstock.com/g/Rania%20tn?rid=344677805&utm_medium=email&utm_source=ctrbreferral-t-link"
                 className={styleBorder} 
                 target="_blank"
