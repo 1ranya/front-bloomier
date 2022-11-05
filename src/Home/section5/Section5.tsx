@@ -1,11 +1,24 @@
 export default function Section5() {
   return (
-    <section className="section5 block m-10 tablet:hidden">
-      <p className='font-text text-[0.9rem] font-thin text-white 
+    <section className="section5 flex block m-10 items-center tablet:hidden">
+      <p className='font-title text-secondary-color text-[1.5rem]'
+        style={{writingMode: "vertical-rl", textOrientation: "mixed", transform: 'scale(-1, -1)'}}
+        >
+        What to propose ?
+      </p>
+      <p className='font-text text-[0.9rem] font-thin text-white pl-2
         widePhone:leading-tight widePhone:text-lg laptop:text-[1.2rem]
       '>
-          This project aims to share my passion and create a link between me and people intrested in photogarphy and art. <br/>
-          My work is available through multiple platforms, you can interract with, ask for personnalized porducts and give me your feedbacks.
+          Through Bloomier project i aim to share my passion and mainly create link with people interested in photogarphy and art. <br/>
+          My art and photography work are available in multiple platforms so : 
+          <ul className="list-disc list-inside">
+            <li>We can interract together</li>
+            <li>You can make orders</li>
+            <li>Ask for personnalized porducts</li>
+            <li>Give me your feedbacks </li>
+          </ul>
+          <a href='/chat' className="underline">You can find all the accounts in the Let's talk section.</a>
+
       </p>
     </section>
   )

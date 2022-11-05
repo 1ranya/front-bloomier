@@ -33,7 +33,7 @@ export default function Chat() {
                 <div className={styleBloomierAccountsGrid}>
                     <div className='flex flex-col'>
                         <p className={styleBloomierAccountsText}> 
-                            Bloomier emails is available for any kind of suggestion.  
+                            Bloomier email is available for your suggestions or orders  
                         </p>
                         <a href={links[3]} className={styleLinks.styleBlock} >
                             <span><MdOutlineMarkEmailUnread size={20} className={styleLinks.hideBlockWidePhoneSize}/></span>bloomier.photography@gmail.com
@@ -50,18 +50,18 @@ export default function Chat() {
                         <p className={styleBloomierAccountsText}> 
                             Bloomier instagram account includes all the updates, behind the scenes and the new art work
                         </p>
-                        <a href={links[2]} target="_blank" className={styleLinks.styleBlock} rel="noreferrer">
+                        <a href={links[5]} target="_blank" className={styleLinks.styleBlock} rel="noreferrer">
                             <span><SiInstagram size={20} className={styleLinks.hideBlockWidePhoneSize}/></span>@bloomier
                         </a>
                     </div>
-                    <a href={links[2]} className={styleLinks.hideBlockPhoneSize}>
+                    <a href={links[5]} className={styleLinks.hideBlockPhoneSize}>
                         <span><SiInstagram size={60}/></span>
                     </a>
                 </div>
                 <div className={styleBloomierAccountsGrid}>
                     <div className='flex flex-col'>
                         <p className={styleBloomierAccountsText}> 
-                            All my paintings are available for sale in my Bloomier Store in Etsy plateform 
+                            All my paintings are available for sale in my Etsy Bloomier Store 
                         </p>
                     <a href={links[1]} target="_blank" className={styleLinks.styleBlock} rel="noreferrer">
                         <span><FaEtsy size={20} className={styleLinks.hideBlockWidePhoneSize}/></span>@BloomierStore 
@@ -74,9 +74,9 @@ export default function Chat() {
                 <div  className={`bg-[#dda15e19] ${styleBloomierAccountsGrid}`}>
                     <div className='flex flex-col'>
                         <p className={styleBloomierAccountsText}> 
-                            Paintings and Photos collections are available on Pinterest gallery</p>
+                            Paintings and photos collections are available on Pinterest gallery</p>
                         <a href={links[2]} target="_blank" className={styleLinks.styleBlock} rel="noreferrer">
-                            <span><FaPinterestP size={20} className={styleLinks.hideBlockWidePhoneSize}/></span>@bloomierphotography
+                            <span><FaPinterestP size={20} className={styleLinks.hideBlockWidePhoneSize}/></span>@bloomierstudio
                         </a>
                     </div>
                     <a href={links[2]} target="_blank" rel="noreferrer" className={styleLinks.hideBlockPhoneSize} >
